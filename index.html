@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bdy">
+    <div id="particles-js"></div>
+    <div class="container">
+         <button class="btn"> CLICK ME</button>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector('.btn')
+    let body = document.querySelector('.container')
+    btn.onclick =async ()=>{
+        await body.classList.add('active')
+        const timeOut = setTimeout(mytime, 1000)
+    }
+    const mytime = ()=>{
+        window.location.href = "./sample_dashboard/index.html"
+    }
+
+    const timeouttwo = setTimeout(gone, 4000)
+    const gone = ()=>{
+        body.classList.remove('active')
+    }
+    // window.onload = ()=>{
+    //     body.classList.remove('active')
+    // }
+</script>
+<script src="particles.js"></script>
+<script src="script.js"></script>
+</html>

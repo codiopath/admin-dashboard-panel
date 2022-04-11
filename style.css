@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#particles-js{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #101010;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    padding: 3px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.btn{
+    width: 24vw;
+    height: 20vh;
+    background: transparent;
+    color: #e0e0e0;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    /* border: 2px solid gray; */
+    text-transform: capitalize;
+    position: relative;
+    font-family: sans-serif;
+}
+
+
+.btn:hover{
+    transform: translate(-.5%, -.5%);
+    border-left: 2px solid gray;
+}
+
+.container{
+    box-shadow: 0 15px 25px rgb(128, 128, 117);
+}
+.container.active {
+    background: transparent;
+    transition: 3s;
+    box-shadow: 0 0 0 300vh #f2635d;
+    border-radius: 10px;
+}
+
+.container.active btn{
+        background: #e0e0e0;
+}
+
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 1895px){
+    #particles-js{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 1274px){
+    .btn{
+        height: auto;
+        width: auto;
+        padding: 5vh 5vw;
+    }
+}
